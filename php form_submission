@@ -1,0 +1,30 @@
+<html>
+<body>
+
+<form action="user.php" method="post">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="email"><br>
+<input type="submit">
+</form>
+
+</body>
+</html>
+
+
+//PHP//user.php//
+
+<?php
+if($_POST[submit]){
+$user_name=$_POST["name"];
+$_email =$_POST["email"];
+}
+?>
+
+<html>
+<body>
+
+Welcome <?php echo $user_name; ?><br>
+Your email address is: <?php echo $email; ?>
+
+</body>
+</html>
